@@ -1,63 +1,185 @@
 <!DOCTYPE html>
 <html lang="eng">
-
-<head>
-    <meta name="charset UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animations</title>
+    <head>
+        
+        <title>Our Labs</title>
+    
     <style>
-        * {
+        body{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
-        
-        body {
-            display: flex;
+        .time{
+            margin:20px auto;
+            height: 50px;
+            width:150px;
+            text-align: center;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #151515;
+            display:block;
         }
-        
-        .circle1 {
-            height: 200px;
-            width: 200px;
+        #Pro1{
+            margin:50px auto;
+            height: 250px;
+            width:300px;
+            text-align: center;
             align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            border: 3px solid #fee84422;
-            border-top: 3px solid #f9ce24;
-            animation: ani 4s linear infinite;
-            display: flex;
+            background-image:linear-gradient(orange,purple);
+            box-shadow:13px 13px 19px #989898,
+            -13px -13px 19px #ffffff;
+            display: block;
+            position: relative;
         }
-        
-        .circle2 {
-            height: 130px;
-            width: 130px;
-            border-radius: 50%;
-            border: 3px solid #fe444425;
-            border-top: 3px solid red;
-            animation: ani 3s linear infinite;
+        #Pro2{
+            margin: 50px auto;
+            height: 250px;
+            width:300px;
+            text-align: center;
+            align-items: center;
+            background-image:linear-gradient(orange,purple);
+            box-shadow: 13px 13px 19px #989898,
+            -13px -13px 19px #ffffff;
+            display: block;
+            position: relative;
         }
-        
-        @keyframes ani {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
+        #Pro3{
+            margin: 50px auto;
+            height: 250px;
+            width:300px;
+            text-align: center;
+            align-items: center;
+            background-image:linear-gradient(orange,purple);
+            box-shadow: 13px 13px 19px #989898,
+            -13px -13px 19px #ffffff;
+            display: block;
+            position: relative;
+        }
+        #Pro4{
+            margin:50px auto;
+            height: 250px;
+            width:300px;
+            text-align: center;
+            align-items: center;
+            background-image:linear-gradient(orange,purple);
+            box-shadow: 13px 13px 19px #989898,
+            -13px -13px 19px #ffffff;
+            display: block;
+            position: relative;
+        }
+        #Pro5{
+            margin:50px auto;
+            height: 250px;
+            width:300px;
+            text-align: center;
+            align-items: center;
+            background-image:linear-gradient(orange,purple);
+            box-shadow: 13px 13px 19px #989898,
+            -13px -13px 19px #ffffff;
+            display: block;
+            position: relative;
+        }
+        img{
+            height: 100px;
+            width:100px;
+            border-radius: 10%;
+            object-fit: cover;
+        }
+        h4{
+            display: block;
+            color: rgb(10, 0, 0);
+        }
+        h5{
+            display: block;
+            color: rgb(10, 0, 0);
+        }
+        .last{
+            margin:10px auto;
+            height: 50px;
+            width:50%;
+            text-align: center;
+            align-items: center;
+            display: inline;
+            position: relative;
         }
     </style>
-</head>
-
-<body>
-    <div class="container">
-        <div class="circle1">
-            <div class="circle2"></div>
-        </div>
+    </head>
+    <body>
+        <div class="time">
+        <script>
+            let date= new Date();
+            let dayName= date.toLocaleDateString("en-US",{weekday:'long'});
+            document.write("Today is " + dayName);
+        </script>
     </div>
-</body>
 
+        <div id="Pro1">
+            <img src="./images/gomallogo.jpeg">
+            <h4>MicroProcessor to- Mon-Wed</h4>
+            <h5>9:30 * 10:30</h5>
+            <h5> Farhan</h5>
+        </div>
+
+        <div id="Pro2">
+            <img src="./images/gomallogo.jpeg">
+            <h4>Data Communication to- Mon-Wed</h4>
+            <h5> 10:30 * 11:30</h5>
+            <h5> Nasir Jamal</h5>
+        </div>
+
+        <div id="Pro3">
+            <img src="./images/gomallogo.jpeg">
+            <h4>Communication Skills to- Mon-Wed</h4>
+            <h5>11:30 * 12:30</h5>
+            <h5>Abdur Rehman</h5>
+        </div>
+
+        <div id="Pro4">
+            <img src="./images/gomallogo.jpeg">
+            <h4>Visual Programming to- Thur-Fri</h4>
+            <h5>9:30 * 10:30</h5>
+            <h5>Ijaz Ahmed</h5>
+        </div>
+
+        <div id="Pro5">
+            <img src="./images/gomallogo.jpeg">
+            <h4>Intro to Software Engineering to- Thur-Fri</h4>
+            <h5>9:30 * 10:30</h5>
+            <h5>Sheikh Saqib</h5>
+        </div>
+
+
+        <script>
+            var dive = document.getElementById("Pro1");
+            dive.addEventListener("click",function(){
+                this.style="height:270px";
+            });
+    
+            var dive = document.getElementById("Pro2");
+            dive.addEventListener("click",function(){
+                this.style="height:270px";
+            });
+                
+            var dive = document.getElementById("Pro3");
+            dive.addEventListener("click",function(){
+                this.style="height:270px";
+            });
+        
+            var dive = document.getElementById("Pro4");
+            dive.addEventListener("click",function(){
+                this.style="height:270px";
+            });
+        
+            var dive = document.getElementById("Pro5");
+            dive.addEventListener("click",function(){
+                this.style="height:270px";
+            });
+        </script>
+
+        <div class="last">
+            <script>
+        var data = new Date();
+        document.write(data);
+            </script>
+        </div>
+    </body>
 </html>
