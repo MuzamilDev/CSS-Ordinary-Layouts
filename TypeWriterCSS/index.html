@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Type write effects</title>
+        <style>
+        body{
+            margin: 0ppx;
+            padding: 0px;
+            background-color: rgb(7, 7, 7);
+        }
+        p{
+            border-right: 3px solid white;
+            font-size:45px;
+            color:yellow;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        p 
+        {
+            animation: animated-text 4s
+            steps(10) 1s normal both,
+            animated-cursor 500ms steps(10)
+            infinite normal;
+        }
+
+        @keyframes animated-text{
+            from{
+                width:0;
+            }
+            to{
+                width: 230px;
+            }
+            }
+        @keyframes animated-cursor{
+            from{
+                border-right-color: white;
+            }
+            to{
+                border-right-color: transparent;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <p class="animated-text">I Love C++</p>
+    </body>
+</html>
